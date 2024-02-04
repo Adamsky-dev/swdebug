@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:clock/clock.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,9 +32,11 @@ class SWPage extends StatefulWidget {
 }
 
 class _SWPageState extends State<SWPage> {
-  Stopwatch stopwatch = Stopwatch();
+  // Stopwatch stopwatch = Stopwatch();
   Timer? timer;
   bool started = false;
+
+  Stopwatch stopwatch = clock.stopwatch();
 
   void handleStartStop() {
     if (timer == null) {

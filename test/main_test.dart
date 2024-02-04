@@ -22,6 +22,6 @@ void main() {
 
     final text = timerText.evaluate().single.widget as Text;
 
-    expect(text.data, '00:03:000');
+    expect(text.data, '03:00:000');
   });
 }
