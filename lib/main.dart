@@ -1,9 +1,11 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:clock/clock.dart';
+import 'package:swdebug/listenable_b.dart';
+// import 'package:swdebug/value_listenable_builder.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ListenableBuilderExample());
 }
 
 class MyApp extends StatelessWidget {
